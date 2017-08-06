@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo list with Pomodoro Technique</title>
+
+        <link href="css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="includes/bootstrap/css/bootstrap.min.css">
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body onload="init()">
+        <div id="header" class="col-md-12">
+            <h1>Todo List</h1>
+        </div>
+
+        <div id="container" >
+            <div id="row" class="col-md-12">
+                <div id="column01" class="col-md-8">
+                    <div class="input-group">
+                        <input id="inputNewTask" type="text" class="form-control" placeholder="add a Task">
+                        <span class="input-group-btn">
+                            <button id="addButton" class="btn btn-success" type="button">Add</button>
+                            <button id="editButton" class="btn btn-danger hide" type="button">EditName</button>
+                        </span>
+                    </div>
+                    <div class="filter">
+                        <button class="btn btn-filter btn-success" type="button" id="All" onclick="filter(this)">All</button>
+                        <button class="btn btn-filter btn-filter-outline" type="button" id="Complete" onclick="filter(this)">Completed</button>
+                        <button class="btn btn-filter btn-filter-outline" type="button" id="Incomplete" onclick="filter(this)">Incomplete</button>
+                    </div>
+                    <div class="currentTaskList">
+                        <ul id="taskList" class="list-group"></ul>
+                    </div>
+                    <button id="clearAllButton" type="button" class="btn btn-danger">Clear All</button>                    
+                </div>
+                <div id="column02" class="col-md-2">
+                    <div id="clockDownDiv">
+                        <h2>Timer</h2>
+                        <div>
+                            <span class="minutes">00</span>
+                            <div class="smalltext">Minutes</div>
+                        </div>
+                        <div>
+                            <span class="seconds">00</span>
+                            <div class="smalltext">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="col-md-12">
+
+        </div>
+        <script src="includes/jquery/jquery-3.2.1.min.js"></script>
+        <script src="includes/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/enums.js"></script>
+        <script src="js/miscellaneous.js"></script>
+        <script src="js/timer.js"></script>
+        <script src="js/task.js"></script>
+        <script src="js/templates.js"></script>
+        <script src="js/main.js"></script>
+
+        <audio id="beep"><source src="includes/sounds/Ring06.wav"  /></audio>
+    </body>
+</html>

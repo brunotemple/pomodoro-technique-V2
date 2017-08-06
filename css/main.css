@@ -1,0 +1,55 @@
+body{
+    background: #161616;
+    color: white;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+#clockDownDiv {
+    text-align: center;
+    font-size: 3em;
+    border: 2px solid #8694aa;
+    padding: 0.1em;
+}
+#clockDownDiv > div {
+    padding: 6px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #8694aa;
+    border-radius: 0.5em;
+}
+
+.smalltext{
+	padding-top: 0.3em;
+	font-size: 0.35em;
+}
+
+.list-group-item {
+    background: #161616;
+    font-size: 1.5em;
+}
+
+.btn-filter{
+    margin: 0.5em 0;
+    border: 2px solid #fff;
+}
+.btn-filter-outline{
+    background-color: transparent;
+}
+
+.list-col-01{
+    float: left;
+    width: 85%;
+}
+.list-col-02{
+    float: left;
+    width: 15%;
+}
+
+.ListTaskTitle{
+    display: inline-block;
+    width: 70%;
+}
+.ListTaskPomodoros{
+    width: 30%;
+}
